@@ -1,22 +1,66 @@
 <%- include("../inc/top.ejs") %>
 <div class="container">
-    <header id="main" class="border-2"></header>
-    <main id="main" class="border-2">
-        <nav class="border-2 shadow back-white1">
-            <button>Best</button>
-            <button>Hot</button>
-            <button>New</button>
-            <button>Top</button>
+  <header id="main" class="border-2 back-white1 pad-1-1">
+    <div>
+      <h1 class="back-orange0 border-2" style="width: 10vw; font-size: 2vw">
+        Trident
+      </h1>
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Search Reddit"
+        class="border-2 back-white2"
+        id="searchbox"
+        style="
+          width: 30vw;
+          padding-left: 10%;
+          letter-spacing: 2px;
+          font-size: 1vw;
+        "
+      />
+    </div>
+    <div style="width: 30vw">
+      <nav id="navigation">
+        <button class="btn-1 back-white2">A</button>
+        <button class="btn-1 back-white2">B</button>
+        <button class="btn-1 back-white2">C</button>
+        <button class="btn-1 back-orange0">+</button>
+        <button class="btn-1 back-yellow0">GET COINS</button>
+        <div id="username" class="btn-1 back-white2">Seji</div>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="border-2 pad-1-1">
+    <nav class="border-3 shadow back-white2 pad-05-1">
+      <button class="btn-1 back-black0 color-white2">Best</button>
+      <button class="btn-1 back-white2">Hot</button>
+      <button class="btn-1 back-white2">New</button>
+      <button class="btn-1 back-white2">Top</button>
+    </nav>
+    <section id="feed">
+      <article class="border-3 shadow back-white2">
+        <img src="" alt="" id="tumbnail" class="border-2" />
+        <h1 id="title">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Reprehenderit ad voluptas quisquam quae temporibus sapiente, suscipit
+          cumque nihil, nostrum asperiores voluptates deleniti inventore dolore
+          voluptatum quod minima, non harum? Atque, beatae quos? Molestiae vero
+          magni et delectus veniam alias fugit dolores a libero explicabo sint
+          hic nesciunt illo, animi nulla.
+        </h1>
+        <nav id="action">
+          <button>2.9k Comments</button>
+          <button>Award</button>
+          <button>Share</button>
+          <button>Save</button>
+          <button>more</button>
         </nav>
-        <section id="feed">
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-        </section>
-    </main>
-    <aside id="main" class="border-2"></aside>
-    <!-- <footer></footer> -->
+      </article>
+    </section>
+  </main>
+  <aside id="main" class="border-2 back-white1"></aside>
+  <!-- <footer></footer> -->
 </div>
 
 <%- include("../inc/bottom.ejs") %>
