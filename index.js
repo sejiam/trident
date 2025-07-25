@@ -13,7 +13,7 @@ app.set("views", "./view");
 
 // main
 app.get("/", (req, res) => {
-  res.render("home/home.ejs", { pageCss: "home/home" });
+  res.render("home/home.ejs", { pageCss: "css/home/home" });
 });
 
 // final
