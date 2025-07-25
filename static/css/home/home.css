@@ -67,14 +67,30 @@ section#feed > article {
   padding: 1% 0.5%;
 }
 
-section#feed > article > img#tumbnail {
+section#feed > article > div#thumbnail {
   width: 100%;
   height: 100%;
   grid-area: 1/2/4/3;
+  overflow: hidden;
 }
 
-section#feed > article > h1#title {
-  grid-area: 1/3/3/4;
+section#feed > article > div#thumbnail > img {
+  height: 100%;
+}
+
+section#feed > article > div#title {
+  grid-area: 1/3/2/4;
+  height: 100%;
+  font-weight: bold;
+}
+
+section#feed > article > span#author {
+  font-weight: bold;
+}
+
+section#feed > article > span#author::before {
+  content: "t/";
+  color: var(--orange1);
 }
 
 section#feed > article > nav#action {
@@ -112,4 +128,23 @@ main#main > section#feed > article > nav#action > button {
 i {
   font-size: large;
   line-height: 2px;
+}
+
+aside#main {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 3%;
+  gap: 1vh 0;
+}
+
+aside#main > section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1%;
+}
+
+aside#main > section#growing > ol > li::before {
+  content: "t/";
+  font-weight: bolder;
 }

@@ -6,6 +6,7 @@
   --black0: #3d3d3d;
 
   --orange0: #fc8881;
+  --orange1: #e28052;
 
   --yellow0: #fbfd81;
 
@@ -35,6 +36,10 @@
   background-color: var(--blue0);
 }
 
+.back-orange1 {
+  background-color: var(--orange1);
+}
+
 .color-white0 {
   color: var(--white0);
 }
@@ -56,6 +61,9 @@
 }
 .color-blue0 {
   color: var(--blue0);
+}
+.color-orange1 {
+  color: var(--orange1);
 }
 
 .flex-center {
@@ -99,6 +107,7 @@
   border: none;
   color: var(--black0);
   font-family: sans-serif;
+  list-style: none;
 }
 
 body {
