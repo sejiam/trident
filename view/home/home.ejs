@@ -22,24 +22,43 @@
     </div>
     <div style="width: 30vw">
       <nav id="navigation">
-        <button class="btn-1 back-white2">A</button>
-        <button class="btn-1 back-white2">B</button>
-        <button class="btn-1 back-white2">C</button>
-        <button class="btn-1 back-orange0">+</button>
-        <button class="btn-1 back-yellow0">GET COINS</button>
+        <button class="flex-center btn-1 back-white2">
+          <i class="fi fi-br-menu-burger"></i>
+        </button>
+        <button class="flex-center btn-1 back-white2">
+          <i class="fi fi-br-bell"></i>
+        </button>
+        <button class="flex-center btn-1 back-white2">
+          <i class="fi fi-br-comment"></i>
+        </button>
+        <button class="flex-center btn-1 back-orange0">
+          <i class="fi fi-br-plus"></i>
+        </button>
+        <button class="flex-center btn-1 back-yellow0">GET COINS</button>
         <div id="username" class="btn-1 back-white2">Seji</div>
       </nav>
     </div>
   </header>
   <main id="main" class="border-2 pad-1-1">
-    <nav class="border-3 shadow back-white2 pad-05-1">
-      <button class="btn-1 back-black0 color-white2">Best</button>
-      <button class="btn-1 back-white2">Hot</button>
-      <button class="btn-1 back-white2">New</button>
-      <button class="btn-1 back-white2">Top</button>
+    <nav class="flex-center border-3 shadow back-white2 pad-05-1">
+      <button id="best" class="flex-center btn-1 back-black0 color-white2">
+        <i class="fi fi-br-rocket color-white2"></i>Best
+      </button>
+      <button id="hot" class="flex-center btn-1 back-white2">
+        <i class="fi fi-br-flame"></i>Hot
+      </button>
+      <button id="new" class="flex-center btn-1 back-white2">
+        <i class="fi fi-br-hourglass-end"></i>New
+      </button>
+      <button id="top" class="flex-center btn-1 back-white2">
+        <i class="fi fi-br-chart-line-up"></i>Top
+      </button>
     </nav>
-    <section id="feed">
-      <article class="border-3 shadow back-white2">
+    <section id="feed" class="flex-center">
+      <article class="border-3 shadow back-white2 flex-center">
+        <div id="up"><i class="fi fi-br-up"></i></div>
+        <span id="votes">39.4k</span>
+        <div id="down"><i class="fi fi-br-down"></i></div>
         <img src="" alt="" id="tumbnail" class="border-2" />
         <h1 id="title">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -50,11 +69,21 @@
           hic nesciunt illo, animi nulla.
         </h1>
         <nav id="action">
-          <button>2.9k Comments</button>
-          <button>Award</button>
-          <button>Share</button>
-          <button>Save</button>
-          <button>more</button>
+          <button class="flex-center" id="comment">
+            <i class="fi fi-br-comment"></i>2.9k Comments
+          </button>
+          <button class="flex-center" id="award">
+            <i class="fi fi-br-gift"></i>Award
+          </button>
+          <button class="flex-center" id="share">
+            <i class="fi fi-br-share"></i>Share
+          </button>
+          <button class="flex-center" id="save">
+            <i class="fi fi-br-bookmark"></i>Save
+          </button>
+          <button class="flex-center" id="more">
+            <i class="fi fi-br-menu-dots-vertical"></i>
+          </button>
         </nav>
       </article>
     </section>

@@ -58,6 +58,12 @@
   color: var(--blue0);
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-1 {
   font-weight: bold;
   padding: 0.5vw 1vw;

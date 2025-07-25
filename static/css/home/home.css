@@ -16,6 +16,7 @@ main#main {
   display: flex;
   flex-direction: column;
   gap: 2vh;
+  overflow: auto;
 }
 
 aside#main {
@@ -23,7 +24,6 @@ aside#main {
 }
 
 main#main > nav {
-  display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 5px;
@@ -40,22 +40,21 @@ header#main > div > * {
 }
 
 header#main > div > nav#navigation {
-  display: flex;
   align-items: stretch;
-  justify-content: center;
   gap: 0.5vw;
 }
 
 header#main > div > nav#navigation > * {
-  /* padding: 0 4%; */
   min-width: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio: 1/1;
+}
+
+header#main > div > nav#navigation > *:nth-last-child(1),
+header#main > div > nav#navigation > *:nth-last-child(2) {
+  aspect-ratio: unset;
 }
 
 section#feed {
-  display: flex;
   gap: 2vh;
   flex-direction: column;
 }
@@ -69,6 +68,8 @@ section#feed > article {
 }
 
 section#feed > article > img#tumbnail {
+  width: 100%;
+  height: 100%;
   grid-area: 1/2/4/3;
 }
 
@@ -87,11 +88,28 @@ section#feed > article > nav#action > button {
   padding: 1%;
   background-color: transparent;
 }
-
-section#feed > article > nav#action > button::before {
-  content: "";
+main#main > nav > button {
+  gap: 7px;
 }
 
-section#feed > article > nav#action > button:last-child {
-  justify-content: right;
+main#main > section#feed > article > div#up {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+main#main > section#feed > article > div#down {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+main#main > section#feed > article > span#votes {
+  font-weight: bolder;
+  grid-area: 2/1/3/2;
+}
+
+main#main > section#feed > article > nav#action > button {
+  gap: 7px;
+}
+
+i {
+  font-size: large;
+  line-height: 2px;
 }
